@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.dragmove.DraggableLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".MainActivity">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="#ff0" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#f00" />
+
+    </com.example.dragmove.DraggableLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#1f000000">
+
+        <com.example.dragmove.DragView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00ff00" />
+
+        <com.example.dragmove.DragView1
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#0000ff" />
+
+        <com.example.dragmove.DragView3Error
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:background="#cf00ff" />
+
+
+        <com.example.dragmove.DragView2Error
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="#00ffff">
+
+            <!--   <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="你好呀" />-->
+        </com.example.dragmove.DragView2Error>
+
+
+    </FrameLayout>
+
+</LinearLayout>
